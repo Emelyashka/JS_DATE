@@ -90,3 +90,26 @@ function task7()
         hello = 'Добрый вечер!';
     alert (hello);
 }
+function task8()
+{  
+    let days = ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'];
+    let Christmas = new Date (2023,0,7);
+    let DefendersDay = new Date (2023,1,23);
+    let WomensDay = new Date (2023,2,8);
+    let May = new Date (2023,4,1);
+    let VictoryDay = new Date (2023,4,9);
+    let RussiaDay = new Date (2023,5,12);
+    let UnityDay = new Date (2023,10,4);
+    let NewYear = new Date (2023,11,31);
+    let holiday = [
+        { 'Рождество': `${days[Christmas.getDay()]}`},
+        { 'День защитника Отечества': `${days[DefendersDay.getDay()]}`},
+        { 'Международный женский день': `${days[WomensDay.getDay()]}`},
+        { 'Праздник весны и труда': `${days[May.getDay()]}`},
+        { 'День победы': `${days[VictoryDay.getDay()]}`},
+        { 'День России': `${days[RussiaDay.getDay()]}`},
+        { 'День народного единства': `${days[UnityDay.getDay()]}`},
+        { 'Новый год': `${days[NewYear.getDay()]}`},
+      ]; 
+      console.log(holiday);
+}
