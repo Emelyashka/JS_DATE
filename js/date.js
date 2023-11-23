@@ -77,3 +77,16 @@ function arrayOfFridaythe13thsIn(year) {
    alert (array);
 }
 }
+function task7()
+{
+    let timeNow = new Date();
+    let hours = timeNow.getHours();
+    let hello;
+    if (hours >= 0 && hours <= 11.00)
+        hello = 'Доброе утро!';
+    else if (hours >= 11.01 && hours <= 17)
+        hello = 'Добрый день!';
+    else if (hours >= 17.01 && hours <= 24)
+        hello = 'Добрый вечер!';
+    alert (hello);
+}
