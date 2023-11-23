@@ -55,3 +55,10 @@ function task4()
     alert (`${milli} миллисекунд - это ${getMin(milli)} минут`);
     alert (`${milli} миллисекунд - это ${getSec(milli)} секунд`);
 }
+function task5()
+{
+    let today = new Date();
+    let hbdate = new Date(prompt("Введите дату рождения (год-месяц-число)"));
+    let diff = new Date(today.getTime() - hbdate.getTime());
+    alert(`Ваш возраст - ${diff.getUTCFullYear() - 1970} лет, ${diff.getUTCMonth()} мес и ${diff.getUTCDate() - 2} дн`);
+}
