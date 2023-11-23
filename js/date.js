@@ -23,3 +23,35 @@ function getObjectMyDays()
         prev:prev,
     }
 }
+function task4()
+{
+    let milli = prompt("Введите миллисекунды");
+    function getMin(milli){
+        let minutes = Math.floor(milli / 60000);
+        return minutes;
+      };
+      function getSec(milli){
+        let sec = Math.floor(milli / 1000);
+        return sec;
+      };  
+      function getHours(milli){
+        let hours = Math.round(milli / (1000*60*60));
+        return hours;
+      };  
+      function getDay(milli){
+        let days = Math.round(milli/ (1000*60*60*24));
+        return days;
+      };        
+    result = [
+        {
+            d: `${getDay(milli)}`,
+            h: `${getHours(milli)}`,
+            m:  `${getMin(milli)}`,
+            s: `${getSec(milli)}`,        
+        }];
+    console.log (result);
+    alert (`${milli} миллисекунд - это ${getDay(milli)} дней`);
+    alert (`${milli} миллисекунд - это ${getHours(milli)} часов`);
+    alert (`${milli} миллисекунд - это ${getMin(milli)} минут`);
+    alert (`${milli} миллисекунд - это ${getSec(milli)} секунд`);
+}
