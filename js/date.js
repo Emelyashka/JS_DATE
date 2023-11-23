@@ -62,3 +62,18 @@ function task5()
     let diff = new Date(today.getTime() - hbdate.getTime());
     alert(`Ваш возраст - ${diff.getUTCFullYear() - 1970} лет, ${diff.getUTCMonth()} мес и ${diff.getUTCDate() - 2} дн`);
 }
+function task6()
+{
+for (let friday of arrayOfFridaythe13thsIn(2023))
+console.log(friday.toLocaleString(undefined, { day: "numeric", month: "long" }))
+function arrayOfFridaythe13thsIn(year) {
+    let array = [];
+    for (let month = 0; month < 12; month++) {
+        let d = new Date(year, month, 13);
+        if (d.getDay() == 5) {
+            array.push(d);
+        }
+    }
+   alert (array);
+}
+}
